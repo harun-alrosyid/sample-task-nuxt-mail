@@ -1,75 +1,46 @@
-# Nuxt Minimal Starter
+# Nuxt Mail Application
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A streamlined email management interface built with Nuxt 3.
 
-## Setup
+### Tech Stack
 
-Make sure to install dependencies:
+- **Framework**: Nuxt 3 with TypeScript
+- **State Management**: Pinia (Setup Store / Composition API)
+- **Styling**: CSS (BEM Methodology)
+
+### Key Features
+
+- **Inbox & Archive**: Distinct views for managing email flow.
+- **Bulk Actions**: Process multiple selections for archiving or marking as read.
+- **Keyboard Shortcuts**:
+  - `r`: Mark selection or open email as read.
+  - `a`: Archive selection or open email.
+  - `Esc`: Close individual detail view.
+
+### Project Structure
+
+- `components/`: UI components following strict BEM naming.
+- `composables/`: Decoupled logic (e.g., keyboard listeners).
+- `stores/`: App state managed via Pinia Setup Stores.
+- `types/`: Shared TypeScript interfaces and definitions.
+- `utils/`: Data initialization and static assets.
+
+### Getting Started
+
+Install dependencies:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Run development server:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+Build for production:
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

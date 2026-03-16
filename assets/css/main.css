@@ -1,0 +1,43 @@
+:root {
+  --sidebar-bg: #F8FAFC;
+  --sidebar-hover: #E2E8F0;
+  --active-blue: #E2EBFA;
+  --border-color: #E2E8F0;
+  --text-primary: #121829;
+  --text-secondary: #4B5563;
+  --primary-blue: #0968FE;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text-primary);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+.layout-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
